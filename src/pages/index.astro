@@ -1,15 +1,217 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from '../components/Button.astro';
-import Link from '../components/Link.astro';
-import { Image } from 'astro:assets';
-import thumbsup from "../assets/images/thumbsup.png";
+import Button from "../components/Button.astro";
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import guitar from "../assets/images/Guitar.jpg";
 ---
-<MainLayout title="Titel">
-	<article>
-		<h1>Index overskrift</h1>
-		<Button>Klik!</Button>
-		<p>Link til <Link href="https://www.kea.dk" target="_blank">En anden side</Link></p>
-		<Image src={thumbsup} alt=""></Image>
-	</article>
+
+<MainLayout
+  title="Surf rock"
+  description="Surf rock er en genre af rockmusik, der opstod i begyndelsen af 1960'erne, særligt i det sydlige Californien."
+  ogtitle="Surf rock, en genre af rockmusik"
+  ogdescription="Læs om Surf Rock og genrens kendetegn. Samt hvordan musikgenren har udviklet sig gennem årene."
+>
+  <article>
+    <section id="hero" class="pb-16">
+      <h2 class="text-2xl md:text-3xl text-center mt-22 text-cyan-950">
+        Energetisk og guitarbaseret rockmusik
+      </h2>
+      <h1
+        class="font-bold text-8xl md:text-[150px] text-center pb-10 text-cyan-700"
+      >
+        Surf Rock
+      </h1>
+      <div class="flex justify-center">
+        <Image
+          src={guitar}
+          alt="Billede der viser en person der spiller guitar"
+          class="lg:w-[800px]"
+        />
+      </div>
+      <p class="lg:text-lg py-12 text-cyan-950">
+        Surf rock er en genre af rockmusik, der opstod i begyndelsen af
+        1960'erne, særligt i det sydlige Californien. Musikken er stærkt
+        inspireret af den amerikanske surfkultur, hvor bølgesurfing blev meget
+        populært på samme tid. Genren blev kendetegnet ved sin energiske og
+        rytmiske stil, der skulle afspejle fart og spænding fra surfing, samt
+        ved brugen af elektrisk guitar med en særlig reverb-effekt, som gav
+        musikken en "våd" lyd, der mindede om lyden af havets bølger.
+      </p>
+      <hr />
+    </section>
+    <section>
+      <h2 class="text-6xl text-cyan-950 pb-16">Surf Rock gennem årene</h2>
+      <section id="1958" class="py-6 grid grid-cols-2">
+        <div class="">
+          <h2 class="text-6xl text-center text-cyan-700">1958</h2>
+        </div>
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">Oprindelsen af surf rock</h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            Dick Dale spiller en central rolle i skabelsen af surf rock-genren
+            ved at eksperimentere med guitarens reverb-effekt og hurtigt strums.
+            Han begynder at udvikle den unikke lyd, som senere bliver
+            kendetegnende for genren.
+          </p>
+        </div>
+      </section>
+      <hr />
+
+      <section id="1961" class="py-6 grid grid-cols-2">
+        <div class="">
+          <h2 class="text-6xl text-center text-cyan-700">1961</h2>
+        </div>
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">
+            Udgivelsen af "Let's Go Trippin'" af Dick Dale
+          </h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            "Let's Go Trippin'" bliver betragtet som den første surf rock-single
+            og markerer starten på genrens kommercielle succes. Dick Dale bliver
+            ofte kaldt "kongen af surf guitar."
+          </p>
+        </div>
+      </section>
+      <hr />
+
+      <section id="1962" class="py-6 grid grid-cols-2">
+        <div class="">
+          <h2 class="text-6xl text-center text-cyan-700">1962</h2>
+        </div>
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">
+            The Beach Boys' debutalbum "Surfin' Safari"
+          </h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            The Beach Boys udgiver deres debutalbum "Surfin' Safari", som
+            kombinerer surf rockens instrumentale stil med vokale harmonier.
+            Dette introducerer surf rock til et bredere publikum og bliver en af
+            genrens første store kommercielle successer.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="1963" class="py-6 grid grid-cols-2">
+        <div>
+          <h2 class="text-6xl text-center text-cyan-700">1963</h2>
+        </div>
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">
+            Udgivelsen af "Surfin' U.S.A." af The Beach Boys
+          </h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            "Surfin' U.S.A." bliver en af de mest ikoniske sange i surf
+            rock-genren og når tredjepladsen på Billboard Hot 100. Sangen
+            cementerer The Beach Boys som frontløbere i genren.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="1963" class="py-6 grid grid-cols-2">
+        <div><h2 class="text-6xl text-center text-cyan-700">1963</h2></div>
+
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">"Pipeline" af The Chantays</h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            "Pipeline" af The Chantays • The Chantays udgiver "Pipeline", en
+            instrumental surf rock-klassiker, der bliver et af de mest
+            genkendelige surf rock-numre og opnår stor succes på hitlisterne.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="1964" class="py-6 grid grid-cols-2">
+        <div>
+          <h2 class="text-6xl text-center text-cyan-700">1964</h2>
+        </div>
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">
+            Udgivelsen af" Wipe Out" af The Surfaris
+          </h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            "Wipe Out" bliver et internationalt hit og er kendt for sin
+            karakteristiske trommeintro. Sangen bliver en af de mest kendte surf
+            rock-instrumentaler.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="1964" class="py-6 grid grid-cols-2">
+        <div>
+          <h2 class="text-6xl text-center text-cyan-700">1964</h2>
+        </div>
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">
+            Britisk invasion svækker surf rockens popularitet
+          </h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            The Beatles og andre britiske bands indleder "British Invasion," som
+            hurtigt overtager de amerikanske hitlister. Surf rock begynder at
+            miste sin popularitet i mainstream-musikken.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="1994" class="py-6 grid grid-cols-2">
+        <div>
+          <h2 class="text-6xl text-center text-cyan-700">1994</h2>
+        </div>
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">
+            "Pulp Fiction" genopliver interessen for surf rock
+          </h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            Quentin Tarantinos film "Pulp Fiction" bruger Dick Dales "Misirlou"
+            som åbningsnummer, hvilket skaber en stor genopblomstring af
+            interessen for surf rock. Soundtracket gør genren relevant igen for
+            en ny generation.
+          </p>
+        </div>
+      </section>
+      <hr />
+      <section id="2000" class="py-6 grid grid-cols-2">
+        <div>
+          <h2 class="text-6xl text-center text-cyan-700">2000</h2>
+        </div>
+        <div class="text-cyan-950">
+          <h3 class="text-2xl mt-22">Surf rock-inspirerede indie-bands</h3>
+          <p class="lg:text-lg pt-10 lg:pt-0 pb-3">
+            Bands som The Allah-Las og La Luz begynder at inkorporere surf
+            rock-elementer i deres musik og skaber en retro-bølge inden for
+            indie-musikscenen, hvilket holder genren i live i moderne tid.
+          </p>
+        </div>
+      </section>
+      <hr />
+    </section>
+    <hr />
+    <section>
+      <h2 class="text-6xl text-cyan-950 py-8">Kendetegn ved Surf Rock</h2>
+      <ul class="lg:text-lg py-6 text-cyan-950">
+        <li class="pb-4">
+          <strong> Instrumental fokus:</strong> Surf rock er ofte instrumental,
+          selvom nogle sange også har vokal. Det instrumentale fokus betyder, at
+          guitaren typisk spiller en fremtrædende rolle.
+        </li>
+        <li class="pb-4">
+          <strong>Guitar med reverb:</strong> Et af de mest karakteristiske træk
+          ved surf rock er brugen af elektriske guitarer med "reverb" (en form
+          for ekkoeffekt), der giver musikken en "våd" lyd, som efterligner
+          lyden af havet og bølgerne. Fender-guitarer og forstærkere med
+          indbygget reverb blev typisk brugt til at skabe denne lyd.
+        </li>
+        <li class="pb-4">
+          <strong>Hurtig rytme:</strong> Musikken har ofte hurtige og energiske
+          rytmer, der reflekterer den fart og spænding, der er forbundet med
+          surfing. Trommer og baslinjer bidrager til denne energi.
+        </li>
+        <li class="pb-4">
+          <strong> Temaer:</strong> Mange surf rock-numre handler om havet,
+          surfing, strandliv og biler, hvilket spejlede den ungdomskultur, der
+          var populær i Californien på dette tidspunkt.
+        </li>
+      </ul>
+    </section>
+  </article>
 </MainLayout>
